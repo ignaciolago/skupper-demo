@@ -18,7 +18,7 @@ spec:
           prune: true
           selfHeal: true
       source:
-        repoURL: https://github.com/ignaciolago/acm-ocp-azure.git
+        repoURL: https://github.com/ignaciolago/skupper-demo.git
         targetRevision: main
         path: resources/02-acm-integration
       destination:
