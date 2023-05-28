@@ -2,3 +2,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - 00_skupper-subscription.yaml
+  - 01_skupper-namespace.yaml
+  - 02_skupper-site.yaml

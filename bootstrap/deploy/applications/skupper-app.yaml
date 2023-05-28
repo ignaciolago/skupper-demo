@@ -1,21 +1,24 @@
+---
 apiVersion: argoproj.io/v1alpha1
-kind: Application
+kind: ApplicationSet
 metadata:
   name: skupper
   namespace: openshift-gitops
 spec:
-  destination:
-    name: ''
-    namespace: openshift-gitops
-    server: 'https://kubernetes.default.svc'
-  source:
-    path: resources/skupper
-    repoURL: 'https://github.com/ignaciolago/skupper-demo.git'
-    targetRevision: dev
-  project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-    syncOptions:
-      - PruneLast=true
+  generators:
+  - clusters: {}
+  template:
+    metadata:
+      name: skupper-{{name}}
+    spec:
+      project: default
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+      source:
+        repoURL: https://github.com/ignaciolago/skupper-demo.git
+        targetRevision: main
+        path: resources/skupper
+      destination:
+        server: https://kubernetes.default.svc
