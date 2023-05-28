@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: skupper
+  namespace: openshift-operators
+spec:
+  destination:
+    name: ''
+    namespace: openshift-operators
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: resources/skupper
+    repoURL: 'https://github.com/ignaciolago/skupper-demo.git'
+    targetRevision: dev
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - PruneLast=true
