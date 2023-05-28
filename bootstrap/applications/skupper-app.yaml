@@ -19,6 +19,6 @@ spec:
       source:
         repoURL: https://github.com/ignaciolago/skupper-demo.git
         targetRevision: main
-        path: resources/skupper
+        path: resources/03-skupper
       destination:
         server: https://kubernetes.default.svc
