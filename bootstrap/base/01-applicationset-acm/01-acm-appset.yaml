@@ -7,7 +7,7 @@ metadata:
   namespace: openshift-gitops
 spec:
   generators:
-  - clusters: {} 
+  - clusters: local-cluster
   template:
     metadata:
       name: advance-cluster-management-{{name}}
