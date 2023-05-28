@@ -2,5 +2,7 @@
   apiVersion: v1
   kind: ConfigMap
   metadata:
+    annotations:
+    argocd.argoproj.io/sync-wave: "1"
     name: skupper-site
     namespace: skupper-site
