@@ -12,7 +12,7 @@ spec:
   source:
     path: resources/01-acm-operator
     repoURL: 'https://github.com/ignaciolago/skupper-demo.git'
-    targetRevision: dev
+    targetRevision: main
   project: default
   syncPolicy:
     automated:
