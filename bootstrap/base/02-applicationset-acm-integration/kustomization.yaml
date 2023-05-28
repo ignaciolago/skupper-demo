@@ -3,4 +3,4 @@ kind: Kustomization
 commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 resources:
-- 01-acm-appset.yaml
+- 00-acm-appset.yaml
