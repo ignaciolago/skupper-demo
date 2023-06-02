@@ -14,7 +14,7 @@ spec:
         url: https://api.cluster-szcpr.szcpr.sandbox338.opentlc.com:6443
   template:
     metadata:
-      name: skupper-{{name}}
+      name: skupper-{{cluster}}
     spec:
       project: default
       syncPolicy:
