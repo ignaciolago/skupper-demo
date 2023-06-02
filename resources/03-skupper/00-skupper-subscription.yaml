@@ -8,7 +8,6 @@ metadata:
 spec:
   channel: alpha
   installPlanApproval: Automatic
-  name: openshift-operators
-  source: skupper-site
+  name: skupper-operator
+  source: redhat-operators
   sourceNamespace: openshift-marketplace
-  #startingCSV: skupper-operator.v1.2.2
