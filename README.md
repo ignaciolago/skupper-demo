@@ -34,7 +34,7 @@ skupper init --enable-console --enable-flow-collector
 skupper token create $HOME/secret.yaml
 
 
-#### Cluster 2:
+### Cluster 2:
 oc login --token=sha256~xQeRHQ7pWcU0qd22ExO-gPLTEbSboPShvOOnGOpuIao --server=https://api.cluster-tdqgj.tdqgj.sandbox313.opentlc.com:6443\n
 
 
