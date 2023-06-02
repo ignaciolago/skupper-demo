@@ -3,8 +3,6 @@ kind: Subscription
 metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
-  labels:
-    operators.coreos.com/skupper-operator.openshift-operators: ''
   name: skupper-operator
   namespace: openshift-operators
 spec:
