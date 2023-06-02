@@ -6,7 +6,12 @@ metadata:
   namespace: openshift-gitops
 spec:
   generators:
-  - clusters: {}
+  - list:
+      elements:
+      - cluster: sandbox313
+        url: https://api.cluster-tdqgj.tdqgj.sandbox313.opentlc.com:6443
+      - cluster: sandbox338
+        url: https://api.cluster-szcpr.szcpr.sandbox338.opentlc.com:6443
   template:
     metadata:
       name: skupper-{{name}}
