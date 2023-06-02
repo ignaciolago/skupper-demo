@@ -2,6 +2,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
   name: skupper
   namespace: openshift-gitops
 spec:
@@ -16,7 +18,7 @@ spec:
     metadata:
       name: skupper-{{cluster}}
     spec:
-      project: default
+      project: skupper
       syncPolicy:
         automated:
           prune: true
