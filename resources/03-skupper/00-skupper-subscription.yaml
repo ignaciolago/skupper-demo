@@ -11,4 +11,4 @@ spec:
   name: openshift-operators
   source: skupper-site
   sourceNamespace: openshift-marketplace
-  startingCSV: skupper-operator.v1.2.2
+  #startingCSV: skupper-operator.v1.2.2
