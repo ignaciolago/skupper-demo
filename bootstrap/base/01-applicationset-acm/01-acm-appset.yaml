@@ -15,7 +15,7 @@ spec:
     path: resources/01-acm-operator
     repoURL: 'https://github.com/ignaciolago/skupper-demo.git'
     targetRevision: main
-  project: default
+  project: advance-cluster-management
   syncPolicy:
     automated:
       prune: true
